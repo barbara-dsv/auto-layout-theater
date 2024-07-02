@@ -1,6 +1,9 @@
 
 :root{
     --fonte-principal: 'Roboto', sans-serif;
+    --cor-principal: rgba(21, 21, 21, 1);
+    --background-footer: #242424;
+    --background-header: rgba(0, 0, 0, 1);
 }
 
 
