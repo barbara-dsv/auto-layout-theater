@@ -21,3 +21,25 @@ header p{
     font-size: 12px;
     font-weight: 500;
 }
+
+h1{
+    font-family: var(--fonte-principal);
+    color: #eeee;
+    font-size: 1.5em ;
+    padding: 1em;
+}
+.todos_filmes{
+    font-family: var(--fonte-principal);
+    color: #eeee;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 60%;
+    overflow-x: auto;
+}
+.todos_filmes::-webkit-scrollbar{
+    width: 0;
+}
+
+.filmes img{
+    border-radius: 10px;
+}
