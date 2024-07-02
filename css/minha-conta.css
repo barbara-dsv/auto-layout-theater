@@ -1,0 +1,36 @@
+:root {
+  --fonte-principal: 'Roboto', sans-serif;
+  --cor-principal: rgb(21, 21, 21);
+  --background-navbar: #242424;
+  --background-header: rgba(0, 0, 0, 1);
+  --cor-secundaria: #cccccc;
+}
+
+section {
+  padding: 0 24px;
+}
+
+.conta-perfil {
+  display: flex;
+  font-family: var(--fonte-principal);
+  line-height: 18.75px;
+}
+
+.container-esquerdo,
+.container-direito {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .8rem;
+}
+
+.container-esquerdo {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.container-direito {
+  font-weight: 400;
+  color: var(--cor-secundaria);
+}
