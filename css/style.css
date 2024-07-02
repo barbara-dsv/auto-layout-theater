@@ -1,7 +1,7 @@
 :root {
     --fonte-principal: 'Roboto', sans-serif;
     --cor-principal: rgba(21, 21, 21, 1);
-    --background-footer: #242424;
+    --background-navbar: #242424;
     --background-header: rgba(0, 0, 0, 1);
 }
 
@@ -15,20 +15,21 @@ header {
     gap: 110px;
 }
 
-header p{
+header p {
     font-family: var(--fonte-principal);
     color: #FFF;
     font-size: 12px;
     font-weight: 500;
 }
 
-h1{
+h1 {
     font-family: var(--fonte-principal);
     color: #eeee;
-    font-size: 1.5em ;
+    font-size: 1.5em;
     padding: 1em;
 }
-.todos_filmes{
+
+.todos_filmes {
     font-family: var(--fonte-principal);
     color: #eeee;
     display: grid;
@@ -36,10 +37,56 @@ h1{
     grid-auto-columns: 60%;
     overflow-x: auto;
 }
-.todos_filmes::-webkit-scrollbar{
+
+.todos_filmes::-webkit-scrollbar {
     width: 0;
 }
 
-.filmes img{
+.filmes img {
     border-radius: 10px;
+}
+
+.navbar-inferior {
+    position: fixed;
+    bottom: 0;
+    width: 375px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--background-navbar);
+}
+
+.navbar-item {
+    display: flex;
+    gap: .1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: .6rem;
+    letter-spacing: 0.4px;
+    opacity: 45%;
+    cursor: pointer;
+}
+
+.navbar-item:active,
+.navbar-item:hover {
+    opacity: 100%;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.navbar-item img {
+    width: 24px;
+}
+
+.navbar-icone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
