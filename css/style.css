@@ -1,9 +1,23 @@
-
-:root{
+:root {
     --fonte-principal: 'Roboto', sans-serif;
     --cor-principal: rgba(21, 21, 21, 1);
     --background-footer: #242424;
     --background-header: rgba(0, 0, 0, 1);
 }
 
+header {
+    background-color: var(--background-header);
+    display: flex;
+    width: 375px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+}
 
+header p{
+    font-family: var(--fonte-principal);
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+}
