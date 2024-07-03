@@ -66,3 +66,68 @@ section {
 .icone-inativo {
   opacity: 20%;
 }
+
+.recompensas-ativas img {
+  width: 30px;
+}
+
+.recompensas-ativas p {
+  color: #cccccc;
+}
+
+.recompensas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recompensa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recompensa-info {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+
+.recompensa button {
+  font-weight: 400;
+  padding: 8px 12px;
+  color: #dddddd;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.recompensa button:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.detalhes {
+  display: flex;
+}
+
+.detalhes h3,
+.detalhes-links {
+  width: 50%;
+}
+
+.detalhes-links {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.detalhes-links a {
+  color: #0c8ce9;
+}
+
+.detalhes-links a:last-child {
+  color: #e84a4a;
+  padding-bottom: 3.5rem;
+}
