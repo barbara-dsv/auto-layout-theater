@@ -11,4 +11,22 @@ function pegarHoraAtual (){
     elementoP.textContent = hora;
 }
 
-pegarHoraAtual()    
+pegarHoraAtual()   
+
+    const saibaMais = document.querySelector(".saiba_mais")
+    const modal = document.querySelector(".sinopse_filme")
+    const btnSair = document.querySelector(".sair")
+
+    saibaMais.onclick = function(){
+        modal.showModal()
+    }
+
+    btnSair.onclick = function(){
+        modal.close()
+    }
+
+
+
+
+
+

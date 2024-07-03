@@ -29,6 +29,10 @@ h1 {
     font-size: 1.5em;
     padding: 1.5em;
 }
+h2 {
+    padding: 0.7em;
+}
+
 
 .todos_filmes {
     font-family: var(--fonte-principal);
@@ -46,6 +50,41 @@ h1 {
 .filmes img {
     border-radius: 10px;
 }
+
+.texto_filme{
+    margin-left: 10px;
+    font-size: 12px;
+
+}
+
+.saiba_mais{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-family: var(--fonte-principal);
+    color: #FFF
+
+}
+
+.saiba_mais:hover{
+        color: blue;
+
+}
+
+.sinopse_filme::backdrop{
+background-color: rgb(0 0 0/.5);
+}
+ .sinopse_filme{
+    border:none;
+    border-radius: .5rem;
+    box-shadow: 0 0 0 1em rgb (0 0 0/.3);
+    width: 70%;
+ }
+ .sair{
+    margin-top: 20px;
+    cursor: pointer;
+ }
+
 
 .navbar-inferior {
     position: fixed;
