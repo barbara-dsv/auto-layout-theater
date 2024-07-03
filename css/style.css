@@ -75,11 +75,19 @@ h2 {
 background-color: rgb(0 0 0/.5);
 }
  .sinopse_filme{
-    border:none;
-    border-radius: .5rem;
-    box-shadow: 0 0 0 1em rgb (0 0 0/.3);
-    width: 70%;
+    width: 80%; 
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor-principal); 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    z-index: 1000; 
+    display: none;
  }
+
+ .sinopse_filme
  .sair{
     margin-top: 20px;
     cursor: pointer;

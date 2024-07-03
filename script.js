@@ -13,20 +13,27 @@ function pegarHoraAtual (){
 
 pegarHoraAtual()   
 
-    const saibaMais = document.querySelector(".saiba_mais")
-    const modal = document.querySelector(".sinopse_filme")
-    const btnSair = document.querySelector(".sair")
 
-    saibaMais.onclick = function(){
-        modal.showModal()
-    }
+function openModal() {
+    const saibaMais = document.querySelectorAll(".saiba_mais");
 
-    btnSair.onclick = function(){
-        modal.close()
-    }
+    saibaMais.forEach(botao => {
+        botao.addEventListener("click", function() {
+            const filme = botao.closest(".filmes"); 
+            const modal = filme.querySelector(".sinopse_filme");
+            const btnSair = modal.querySelector(".sair"); 
 
+            if (modal) {
+                modal.style.display = "flex"; 
+            }
 
+            if (btnSair) {
+                btnSair.addEventListener("click", function() {
+                    modal.style.display = "none"; 
+                });
+            }
+        });
+    });
+}
 
-
-
-
+openModal();
