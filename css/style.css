@@ -75,24 +75,38 @@ h2 {
 background-color: rgb(0 0 0/.5);
 }
  .sinopse_filme{
-    width: 80%; 
     position: fixed; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--cor-principal); 
+    background-color:rgba(0, 0, 0, 0.8); 
     padding: 20px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    z-index: 1000; 
     display: none;
+    max-width: 300px;   
+    overflow-y: auto;
+    filter: brightness(1.75);
  }
 
  .sinopse_filme
  .sair{
-    margin-top: 20px;
     cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.8); 
+    color: white;
+    max-height: 40px;
+    max-width: 25px;
+    border: solid 1px #ccc;
+    border-radius: 15%;
  }
 
+ .sinopse_filme p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+  
+    color: #ffffff;
+ }
 
 .navbar-inferior {
     position: fixed;
