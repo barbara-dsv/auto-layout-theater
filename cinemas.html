@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cinemas.css">
+    <script src="./script.js" defer></script>
+    <script src="./js/mapa.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+ crossorigin=""></script>
+    <title>cinemas</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/Left Detail.svg" alt="">
+            <p class="hora-atual"></p>
+            <img src="./img/Battery.svg" alt="">
+        </header>
+        <h1>Cinemas</h1>
+        <div id="mapid"></div>
+        <section>
+            <h1>Cinema Iguatemi</h1>
+            <h1>Cinema Rio Mar</h1>
+        </section>
+
+        <footer class="navbar-inferior">
+            <li class="navbar-item">
+                <a href="#index"><span class="navbar-icone"><img src="img/icone-descobrir.png" alt="ícone descobrir"><span>Descobrir</span></span></a>
+            </li>
+            </li>
+            <li class="navbar-item">
+                <a href="#index"><span class="navbar-icone"><img src="img/icone-ingresso.png" alt="ícone ingresso"><span>Ingresso</span></span></a>
+            </li>
+            </li>
+            <li class="navbar-item">
+                <a href="#index"><span class="navbar-icone"><img src="img/icons-svg/cinemas.svg" alt="ícone cinemas"><span>Cinemas</span></span></a>
+            </li>
+            </li>
+            <li class="navbar-item">
+                <a href="#index"><span class="navbar-icone"><img src="img/icone-conta.png" alt="ícone conta"><span>Conta</span></span></a>
+            </li>
+            </li>
+        </footer>
+    </div>
+</body>
+</html>
