@@ -2,20 +2,56 @@
 
 body {
     background-color: #151515;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    padding-bottom: 0;
+    padding-left: 24px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+p {
+    font-family: var(--fonte-principal);
+    padding-left: 24px;
+}
+
+p:last-child{
+    padding-bottom: 40px;
 }
 
 #mapid { 
     height: 500px; 
     width: 375px;
+    position: relative;
+    z-index: 1;
 }
 
 section {
     width: 375px;
-    background: #000;
+    position: absolute;
+    background: #141414ee;
     color: #fff;
+    overflow: hidden;
     border-radius: 20px 20px 0 0;
+    z-index: 2;
+    transform: translateY(-30px);
+    transition: transform .3s ease;
+}
+
+section:hover {
+    transform: translateY(-130px);
 }
 
 footer {
     width: 375px;
+    z-index: 3;
+    top: 570px;
 }
