@@ -108,6 +108,18 @@ section {
   border: 1px solid #ffffff;
 }
 
+#visto-recentemente {
+  padding: 2rem 0 1rem 0;
+}
+
+#visto-recentemente h3 {
+  padding-left: 24px;
+}
+
+#visto-recentemente img {
+  height: 324px;
+}
+
 .detalhes {
   display: flex;
 }
